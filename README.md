@@ -150,4 +150,4 @@ X-TSA-Timestamp-UTC: 2026-11-13T20:25:00.118Z
 
 ---
 
-**Lead Integration Architect:** Željko Popov
+**Integration Architect:** Željko Popov
