@@ -1,0 +1,17 @@
+{
+  "postQuantumSecurityProfile": {
+    "standardCompliance": ["NIST FIPS 203 (ML-KEM-768)", "NIST FIPS 204 (ML-DSA-65)", "FIPS 140-3 Level 3"],
+    "threatModelMitigated": "Harvest Now, Decrypt Later (CRQC Shor's Algorithm Resistance)",
+    "keyExchangePipeline": {
+      "classicalComponent": "X25519 (ECDHE)",
+      "postQuantumComponent": "ML-KEM-768 (Kyber, 1088-byte ciphertext)",
+      "keyDerivationFunction": "HKDF-SHA384",
+      "symmetricPayloadCipher": "AES-256-GCM (128-bit authentication tag)"
+    },
+    "nonRepudiation": {
+      "signatureAlgorithm": "ML-DSA-65 (Dilithium, 3309-byte signature)",
+      "timeStampingAuthority": "RFC 3161 UTC Hardware HSM Timestamp",
+      "targetErpLedger": "SAP S/4HANA Advanced Financial Closing (AFC)"
+    }
+  }
+}
